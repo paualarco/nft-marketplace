@@ -1,0 +1,27 @@
+ // const Market = await ethers.getContractFactory("NFTMarket");
+   // const market = await Market.deploy();
+
+    const NFT = await ethers.getContractFactory("NFT");
+    const nft = await NFT.deploy();
+    await nft.deployed();
+    const nftContractAddress = nft.address;
+    console.log(`nft contract address ${nftContractAddress}`)
+
+   // let listingPrice = await market.getListingPrice();
+   // listingPrice = listingPrice.toString();
+   // console.log(`listing price ${listingPrice}`)
+
+  //  const auctionPrice = ether.utils.parseUnit('100', 'ether');
+   // await nft.createToken("www.mytokenlocation.com");
+   // await nft.createToken("www.mytokenlocation2.com");
+
+   // await market.createMarketItem(nftContractAddress, 1, auctionPrice, {value: listingPrice});
+   // await market.createMarketItem(nftContractAddress, 2, auctionPrice, {value: listingPrice});
+
+  //  const [_, buyerAddress] = await ethers.getSigners();
+
+   // market.connect(buyerAddress).createMarketSale(nftContractAddress, 1, { value: auctionPrice});
+
+   // const items = market.fetchMarketItems();
+
+   // console.log(`final market items ${items}`)
